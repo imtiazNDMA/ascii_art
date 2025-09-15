@@ -44,11 +44,11 @@ except Exception:  # pragma: no cover - handled at runtime
     sys.exit(1)
 
 
-DEFAULT_GRADIENT = "@%#*+=-:. "  # darkest -> lightest
+DEFAULT_GRADIENT = "%#:*+=-_. "  # darkest -> lightest
 
 
 def image_to_ascii(
-    image_path: str,
+    image_path: str = "test.png",
     width: int = 100,
     y_scale: float = 0.5,
     invert: bool = False,
